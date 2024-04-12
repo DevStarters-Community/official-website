@@ -22,5 +22,4 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            whoami
-            ls -l
+            cp index.html /var/www/html/index.html
