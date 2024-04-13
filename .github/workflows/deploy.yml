@@ -22,4 +22,4 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            cp index.html /var/www/html/index.html
+            wget -O /var/www/html/index.html https://raw.githubusercontent.com/DevStarters-Community/official-website/dev/index.html
